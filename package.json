@@ -1,0 +1,12 @@
+{
+  "name": "hackathon2022",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "azure-storage": "^2.10.7"
+  }
+}
