@@ -1,7 +1,7 @@
 //initialize
 const azure = require('azure-storage');
 
-const reservationsvc = azure.createTableService("storagehackathonaccount",process.env.AZURE_STORAGE_ACCESS_KEY);
+const reservationsvc = azure.createTableService("kragrawalhack22a441",process.env.AZURE_STORAGE_ACCESS_KEY);
 const insertEntity = (tableName, entity) =>{
     return new Promise((resolve, reject) =>{
         reservationsvc.insertEntity(

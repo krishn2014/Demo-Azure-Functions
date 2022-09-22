@@ -1,6 +1,6 @@
 const azure = require('azure-storage');
 
-const reservationsvc = azure.createTableService("storagehackathonaccount",process.env.AZURE_STORAGE_ACCESS_KEY);
+const reservationsvc = azure.createTableService("kragrawalhack22a441",process.env.AZURE_STORAGE_ACCESS_KEY);
 
 const deleteEntity = (tableName, entity) =>{
     return new Promise((resolve, reject) =>{

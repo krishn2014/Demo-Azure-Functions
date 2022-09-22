@@ -1,6 +1,6 @@
 const azure = require('azure-storage');
 
-const reservationsvc = azure.createTableService("storagehackathonaccount",process.env.AZURE_STORAGE_ACCESS_KEY);
+const reservationsvc = azure.createTableService("kragrawalhack22a441",process.env.AZURE_STORAGE_ACCESS_KEY);
 const insertEntity = (tableName, entity) =>{
     return new Promise((resolve, reject) =>{
         reservationsvc.insertEntity(
@@ -19,7 +19,7 @@ const insertEntity = (tableName, entity) =>{
 };
 
 var mongoClient = require("mongodb").MongoClient;
-mongoClient.connect("mongodb://azure-cosmodbapiformongodb:bnT9XVW1QE0ca62u53GhOFfempUW2zBJRVy7sUgaB4qJ3jBHPgugIzPGkakyzys1tQZP6msdiw621A66A8nnEA%3D%3D@azure-cosmodbapiformongodb.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@azure-cosmodbapiformongodb@", function (err, client) {
+mongoClient.connect("mongodb://", function (err, client) {
   client.close();
 });
 
