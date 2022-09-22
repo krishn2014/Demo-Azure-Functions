@@ -6,9 +6,9 @@
       "direction": "in",
       "name": "req",
       "methods": [
-        "delete"
+        "post"
       ],
-      "route": "deleteReservation/{username}/{rowKey}"
+      "route": "cosmospostreservation"
     },
     {
       "type": "http",

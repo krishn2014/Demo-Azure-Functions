@@ -6,9 +6,9 @@
       "direction": "in",
       "name": "req",
       "methods": [
-        "delete"
+        "get"
       ],
-      "route": "deleteReservation/{username}/{rowKey}"
+      "route": "initialisedb"
     },
     {
       "type": "http",

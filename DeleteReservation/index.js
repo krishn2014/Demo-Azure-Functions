@@ -19,15 +19,17 @@ const deleteEntity = (tableName, entity) =>{
 };
 module.exports = async function (context, req) {
     try {
-        const {username, RowKey}  = context.bindingData;
+        const username  = context.bindingData.username;
+        let rowKey = context.bindingData.rowKey;
+        rowKey= rowKey.toString();
         const entity ={
             PartitionKey : { _ : username},
-            RowKey : { _ : RowKey.toSring()}
+            RowKey : { _ : rowKey}
         };
         await deleteEntity("Reservations", entity);
     } catch (error) {
         context.res ={
-            status :500,
+            status :505,
             body : error.message
         }
     }
